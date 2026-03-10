@@ -1,38 +1,96 @@
-# todolist
+# To-Do List com Vue.js
 
-This template should help get you started developing with Vue 3 in Vite.
+Uma aplicação web simples e reativa para gerenciamento de tarefas, desenvolvida com **Vue 3** para praticar conceitos de desenvolvimento front-end e explorar o uso de **VUE**.
 
-## Recommended IDE Setup
+Este projeto demonstra a construção de uma interface interativa, manipulação de estado reativo e persistência de dados no navegador.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## Funcionalidades
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- **Adicionar tarefas**  
+  Insira novas tarefas pressionando `Enter` ou clicando no botão de adicionar.
 
-## Customize configuration
+- **Marcar como concluída**  
+  Ao marcar uma tarefa como concluída, ela é automaticamente riscada.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Remoção automática**  
+  Após ser concluída, a tarefa é removida automaticamente após **3 segundos**.
 
-## Project Setup
+- **Remoção manual**  
+  Possibilidade de excluir tarefas individualmente.
 
-```sh
+- **Paginação**  
+  A lista exibe **até 5 tarefas por página**, mantendo a interface organizada.
+
+- **Persistência de dados**  
+  As tarefas são salvas no **LocalStorage**, evitando perda de dados ao atualizar a página.
+
+- **Animações suaves**  
+  Transições visuais ao adicionar, concluir ou remover tarefas.
+
+---
+
+## Tecnologias Utilizadas
+
+- **Vue 3**
+- **Composition API** (`ref`, `computed`, `watch`, `onMounted`, `<script setup>`)
+- **Vite**
+- **JavaScript (ES6+)**
+- **HTML5**
+- **CSS3 (Flexbox)**
+
+---
+
+## Objetivo do Projeto
+
+Este projeto foi desenvolvido com o objetivo de praticar conceitos fundamentais do ecossistema **Vue**, incluindo:
+
+- gerenciamento de estado reativo
+- criação de componentes
+- manipulação de eventos
+- persistência de dados no navegador
+- organização de interfaces
+
+---
+
+## Como executar o projeto
+
+Certifique-se de ter o **Node.js** instalado.
+
+### Clonar o repositório
+
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
+Entrar na pasta do projeto
+
+cd nome-do-repositorio
+
+Instalar dependências
+
 npm install
-```
 
-### Compile and Hot-Reload for Development
+Rodar o servidor de desenvolvimento
 
-```sh
 npm run dev
-```
 
-### Compile and Minify for Production
+Depois disso, abra no navegador:
 
-```sh
-npm run build
-```
+http://localhost:5173
+
+
+📌 Melhorias Futuras
+
+Edição de tarefas
+
+Filtro de tarefas (pendentes / concluídas)
+
+Melhor responsividade para mobile
+
+Integração com backend
+
+Sistema de autenticação de usuários
+
+📄 Licença
+
+Este projeto foi desenvolvido para fins de estudo e aprendizado.
